@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.marcoventuri.scorecounter.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="horizontal">
+        <!--Home column-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!--Home-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/homeAway"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/padding_cq_top"
+                android:text="@string/home"
+                android:textSize="@dimen/text_ha"
+                android:theme="@style/AppTheme" />
+
+            <!--Home Score-->
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:text="@string/home_Score"
+                android:textSize="@dimen/score"
+                android:theme="@style/AppTheme" />
+
+            <!--Home +3-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:background="#81D4FA"
+                android:onClick="addThreeForTeamA"
+                android:paddingLeft="@dimen/buttonLateralPadding"
+                android:paddingRight="@dimen/buttonLateralPadding"
+                android:text="@string/btn3_home"
+                android:textSize="@dimen/button"
+                android:theme="@style/AppTheme" />
+
+            <!--Home +2-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:background="#81D4FA"
+                android:onClick="addTwoForTeamA"
+                android:paddingLeft="@dimen/buttonLateralPadding"
+                android:paddingRight="@dimen/buttonLateralPadding"
+                android:text="@string/btn2_home"
+                android:textSize="@dimen/button"
+                android:theme="@style/AppTheme" />
+
+            <!--Home +1-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:background="#81D4FA"
+                android:onClick="addOneForTeamA"
+                android:paddingLeft="@dimen/buttonLateralPadding"
+                android:paddingRight="@dimen/buttonLateralPadding"
+                android:text="@string/btn1_home"
+                android:textSize="@dimen/button"
+                android:theme="@style/AppTheme" />
+
+
+        </LinearLayout>
+        <!--/Home column-->
+
+        <!--Away column-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!--Away-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/homeAway"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/padding_cq_top"
+                android:text="@string/away"
+                android:textSize="@dimen/text_ha"
+                android:theme="@style/AppTheme" />
+
+            <!--Away Score-->
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:text="@string/home_Score"
+                android:textSize="@dimen/score"
+                android:theme="@style/AppTheme" />
+
+            <!--Away +3-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:background="#2962FF"
+                android:onClick="addThreeForTeamB"
+                android:paddingLeft="@dimen/buttonLateralPadding"
+                android:paddingRight="@dimen/buttonLateralPadding"
+                android:text="@string/btn3_away"
+                android:textSize="@dimen/button"
+                android:theme="@style/AppTheme" />
+
+            <!--Away +2-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:background="#2962FF"
+                android:onClick="addTwoForTeamB"
+                android:paddingLeft="@dimen/buttonLateralPadding"
+                android:paddingRight="@dimen/buttonLateralPadding"
+                android:text="@string/btn2_away"
+                android:textSize="@dimen/button"
+                android:theme="@style/AppTheme" />
+
+            <!--Away +1-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layoutMargin"
+                android:background="#2962FF"
+                android:onClick="addOneForTeamB"
+                android:paddingLeft="@dimen/buttonLateralPadding"
+                android:paddingRight="@dimen/buttonLateralPadding"
+                android:text="@string/btn1_away"
+                android:textSize="@dimen/button"
+                android:theme="@style/AppTheme" />
+
+
+        </LinearLayout>
+        <!--/Away column-->
+
+    </LinearLayout>
+
+    <!--Display Quarter-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <!--Current Qrt-->
+        <TextView
+            android:id="@+id/quarter1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/padding_cq"
+            android:paddingTop="@dimen/padding_cq_top"
+            android:text="@string/current_quarter"
+            android:textSize="@dimen/text_cq"
+            android:theme="@style/AppTheme" />
+
+    </LinearLayout>
+    <!--/Display Quarter-->
+
+    <!--Quarters-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/quartersMarginTop"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!--Quarter1-->
+        <Button
+            android:layout_width="@dimen/quarterButtonWidth"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/fromLeft"
+            android:layout_marginStart="@dimen/fromLeft"
+            android:background="#4CAF50"
+            android:onClick="addQuarter1"
+            android:text="@string/q1"
+            android:theme="@style/AppTheme" />
+
+        <!--Quarter2-->
+        <Button
+            android:layout_width="@dimen/quarterButtonWidth"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/point"
+            android:background="#4CAF50"
+            android:onClick="addQuarter2"
+            android:text="@string/q2"
+            android:theme="@style/AppTheme" />
+
+        <!--Quarter3-->
+        <Button
+            android:layout_width="@dimen/quarterButtonWidth"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/point"
+            android:background="#4CAF50"
+            android:onClick="addQuarter3"
+            android:text="@string/q3"
+            android:theme="@style/AppTheme" />
+
+        <!--Quarter4-->
+        <Button
+            android:layout_width="@dimen/quarterButtonWidth"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/point"
+            android:background="#4CAF50"
+            android:onClick="addQuarter4"
+            android:text="@string/q4"
+            android:theme="@style/AppTheme" />
+
+        <!--OT-->
+        <Button
+            android:layout_width="@dimen/quarterButtonWidth"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/point"
+            android:layout_marginRight="@dimen/point"
+            android:onClick="addOt"
+            android:text="@string/ot"
+            android:theme="@style/AppTheme" />
+
+    </LinearLayout>
+    <!--Quarters-->
+
+    <!--Reset-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/resetButton"
+        android:onClick="resetScore"
+        android:text="@string/reset"
+        android:theme="@style/AppTheme" />
+
+
+</RelativeLayout>
+

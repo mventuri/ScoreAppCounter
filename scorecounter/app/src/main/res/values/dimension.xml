@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <dimen name="point">2sp</dimen>
+
+    <!--Quarter indicator-->
+    <dimen name="padding_cq">4dp</dimen>
+
+    <dimen name="padding_cq_top">16dp</dimen>
+
+    <dimen name="text_cq">15sp</dimen>
+
+    <!--Home Away-->
+    <dimen name="text_ha">40sp</dimen>
+
+    <!--Score-->
+    <dimen name="score">56sp</dimen>
+
+    <!--Button-->
+    <dimen name="button">30sp</dimen>
+
+    <!--Button Padding-->
+    <dimen name="buttonLateralPadding">24dp</dimen>
+
+    <!--Margin from Left-->
+    <dimen name="fromLeft">2dp</dimen>
+
+    <!--Quarter button width-->
+    <dimen name="quarterButtonWidth">50dp</dimen>
+
+    <!--Android Layout Margin Reset Button-->
+    <dimen name="resetButton">32dp</dimen>
+
+    <!--Button Layout margin-->
+    <dimen name="layoutMargin">8dp</dimen>
+
+    <!--Quarters Margin Top-->
+    <dimen name="quartersMarginTop">400dp</dimen>
+
+    <!--Home Margin bottom-->
+    <dimen name="homeMarginBottom">19dp</dimen>
+
+    <!--Padding Home/Away-->
+    <dimen name="homeAway">8dp</dimen>
+
+</resources>
